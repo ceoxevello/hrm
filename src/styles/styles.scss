@@ -9,3 +9,25 @@
  @import "mixins-theme.scss";
  @import "uikit-theme.scss";
  @import 'material-icons/iconfont/material-icons.css';
+ @import "tailwindcss/base";
+ @import "tailwindcss/components";
+ @import "tailwindcss/utilities";
+ @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+ .login-dotnav>li>a {
+     background-color: white;
+     border: none;
+     padding: 0px !important;
+     border-radius: 0px;
+     width: 7px;
+     height: 7px;
+     border-radius: 50%;
+ }
+ 
+ .login-dotnav>li.uk-active>a,
+ .login-dotnav>li>a:hover {
+     width: 25px;
+     border-radius: 0px;
+     background-color: white;
+     border: none !important;
+     border-radius: 25px;
+ }
