@@ -1,9 +1,94 @@
-.login-side {
-    background-color: #136a8a;
-    height: 100vh;
+.login-diff-btn {
+    border: 0.4px solid #2C536430;
+    margin-top: 40px;
+    text-transform: none;
+    color: black;
+    padding: 8px 40px;
+    font-weight: 600;
+    border-radius: 12px;
 }
 
-.login-slider-heading {
-    font-size: 14pt;
+.login-diff-btn>span {
+    font-size: 18px;
+}
+
+.signin-with-diff {
+    width: 100%;
+    text-align: center;
+    border-bottom: 1px solid #2C536430;
+    line-height: 0.1em;
+    margin: 10px 0 20px;
+    margin-top: 40px;
+}
+
+.signin-with-diff span {
+    background: #fff;
+    padding: 0 10px;
+    font-size: 10pt;
+    color: gray;
+    font-weight: 400;
+}
+
+.login-input {
+    height: 52px;
+    border: 1px solid #2C536430;
+    border-radius: 12px;
+    color: black;
+}
+
+.login-input:hover,
+.login-input:focus {
+    border: 1px solid #2C5364;
+}
+
+.input-label {
+    font-size: 9pt;
+    color: black;
+    text-align: left;
+    display: inline-block;
+    margin-bottom: 10px;
+}
+
+.input-icon {
+    font-size: 18px;
+    color: #2C5364;
+}
+
+.login-input::placeholder {
+    font-size: 10pt;
+}
+
+.input-show>span {
+    font-size: 12pt;
+    color: #2C5364;
+}
+
+.input-show:hover {
+    text-decoration: none;
+}
+
+.login-submit {
+    font-size: 12pt;
     color: white;
+    background-color: #203A43;
+    margin-top: 20px;
+    text-transform: none;
+    padding: 8px 20px;
+    border-radius: 12px;
+}
+
+.forget-text {
+    font-size: 10pt;
+    color: gray;
+}
+
+.forget-text>a {
+    color: #203A43;
+    font-weight: 500;
+}
+
+@media only screen and (max-width: 720px) {
+    .login-side {
+        display: none;
+    }
 }

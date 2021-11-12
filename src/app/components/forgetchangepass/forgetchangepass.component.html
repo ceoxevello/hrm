@@ -1,0 +1,37 @@
+<div class="uk-child-width-1-2@s uk-child-width-1-2@m uk-grid-collapse uk-grid-match uk-text-center" uk-grid>
+    <div>
+        <div class="uk-card  uk-card-body uk-padding-large">
+            <app-svgs svgId="login-logo"></app-svgs>
+
+            <h2 class="login-heading">Change Password</h2>
+
+            <form class="uk-grid-small uk-margin-large-top" uk-grid>
+                <div class="uk-width-1-1 uk-text-left">
+                    <label class="uk-form-label input-label" for="form-stacked-text">Enter your password</label>
+                    <div class="uk-inline uk-width-1-1">
+                        <span class="material-icons-round uk-form-icon input-icon">
+                            password
+                            </span>
+                        <input class="uk-input uk-width-1-1 login-input" type="text">
+                    </div>
+                </div>
+                <div class="uk-width-1-1 uk-text-left">
+                    <label class="uk-form-label input-label" for="form-stacked-text">Re-Enter your password</label>
+                    <div class="uk-inline uk-width-1-1">
+                        <span class="material-icons-round uk-form-icon input-icon">
+                            password
+                            </span>
+                        <input class="uk-input uk-width-1-1 login-input" type="Password">
+
+                    </div>
+                </div>
+                <div class="uk-width-1-1 uk-text-left">
+                    <button routerLink="/change-password" class="uk-button uk-width-1-1 login-submit">Change</button>
+                </div>
+            </form>
+        </div>
+    </div>
+    <div>
+        <app-loginside></app-loginside>
+    </div>
+</div>

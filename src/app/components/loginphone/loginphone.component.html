@@ -1,47 +1,36 @@
 <div class="uk-child-width-1-2@s uk-child-width-1-2@m uk-grid-collapse uk-grid-match uk-text-center" uk-grid>
     <div>
         <div class="uk-card  uk-card-body uk-padding-large">
-            <app-svgs svgId="login-logo"></app-svgs>
+            <app-svgs routerLink="/login" svgId="login-logo"></app-svgs>
 
             <h2 class="login-heading">Hi, Welcome Back</h2>
             <h4 class="login-subheading">Login with your Email or Phone OTP</h4>
 
-            <a routerLink="/login-otp" class="login-diff-btn uk-button uk-width-1-1"> Sign in with OTP</a>
-            <p class="signin-with-diff"><span>Or Sign in with email</span></p>
+            <a routerLink="/login" class="login-diff-btn uk-button uk-width-1-1"> Sign in with Email</a>
+            <p class="signin-with-diff"><span>Or Sign in with Phone</span></p>
 
             <form class="uk-grid-small" uk-grid>
                 <div class="uk-width-1-1 uk-text-left">
-                    <label class="uk-form-label input-label" for="form-stacked-text">Email Address</label>
+                    <label class="uk-form-label input-label" for="form-stacked-text">Phone number</label>
                     <div class="uk-inline uk-width-1-1">
                         <span class="material-icons-round uk-form-icon input-icon">
-                            local_post_office
+                            phone_in_talk
                             </span>
-                        <input class="uk-input uk-width-1-1 login-input" placeholder="Email" type="text">
+                        <input class="uk-input uk-width-1-1 login-input" placeholder="Phone" type="text">
                     </div>
                 </div>
                 <div class="uk-width-1-1 uk-text-left">
                     <label class="uk-form-label input-label" for="form-stacked-text">Password</label>
                     <div class="uk-inline uk-width-1-1">
                         <span class="material-icons-round uk-form-icon input-icon">
-                            lock
+                            password
                             </span>
-                        <input class="uk-input uk-width-1-1 login-input" placeholder="password" type="password">
-                        <a class="uk-form-icon uk-form-icon-flip input-show">
-                            <span class="material-icons-outlined ">
-                                visibility
-                                </span>
-                        </a>
+                        <input class="uk-input uk-width-1-1 login-input uk-disabled" placeholder="password" type="Password">
 
                     </div>
                 </div>
                 <div class="uk-width-1-1 uk-text-left">
                     <button class="uk-button uk-width-1-1 login-submit">Login</button>
-                </div>
-                <div class="uk-width-1-1 uk-text-left">
-                    <p class="forget-text">
-                        Not registered yet?
-                        <a routerLink="/forget-password">Forget Password</a>
-                    </p>
                 </div>
             </form>
         </div>

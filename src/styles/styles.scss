@@ -27,7 +27,32 @@
  .login-dotnav>li>a:hover {
      width: 25px;
      border-radius: 0px;
-     background-color: white;
+     background-color: #ffffff90;
      border: none !important;
      border-radius: 25px;
+ }
+ 
+ .login-side {
+     background-color: #2C5364;
+     height: 100vh;
+ }
+ 
+ .login-slider-heading {
+     font-size: 14pt;
+     color: white;
+ }
+ 
+ .login-heading {
+     font-size: 18pt;
+     color: black;
+     font-weight: 600;
+     text-align: left;
+     margin-top: 40px;
+ }
+ 
+ .login-subheading {
+     font-size: 10pt;
+     color: gray;
+     text-align: left;
+     margin-top: 4px;
  }
