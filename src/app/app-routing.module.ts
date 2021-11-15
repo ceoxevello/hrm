@@ -6,13 +6,17 @@ import { BrowserModule, Title } from '@angular/platform-browser';
 import { LoginphoneComponent } from './components/loginphone/loginphone.component';
 import { ForgetpasswordComponent } from './components/forgetpassword/forgetpassword.component';
 import { ForgetchangepassComponent } from './components/forgetchangepass/forgetchangepass.component';
+import { DashboardComponent } from './components/dashboard/dashboard.component';
+import { JobsComponent } from './components/jobs/jobs.component';
 
 const routes: Routes = [
-  {path: '', component: LoginComponent, data: { title : "Welcome to Xevello"}},
+  {path: '', component: DashboardComponent, data: { title : "Welcome to Xevello"}},
   {path: 'login', component: LoginComponent, data: { title: "Xevello HRM | Login " }},
   {path: 'login-otp', component: LoginphoneComponent, data: {title : "Xevello HRM | Login with Phone"}},
   {path: 'forget-password', component: ForgetpasswordComponent, data: {title : "Xevello | Forget Password"}},
-  {path: 'change-password', component: ForgetchangepassComponent, data: {title: "xevello | Change Password"}}
+  {path: 'change-password', component: ForgetchangepassComponent, data: {title: "xevello | Change Password"}},
+  {path: 'home', component: DashboardComponent, data: {title : "Xevello | Dashboard"}},
+  {path: 'jobs', component: JobsComponent, data: {title: "Xevello | Jobs"}}
 ];
 
 @NgModule({

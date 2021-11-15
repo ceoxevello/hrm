@@ -1,0 +1,114 @@
+.navbar {
+    background-color: white !important;
+    border-bottom: 1px solid #2C536420;
+}
+
+.uk-navbar-nav>li>a,
+.uk-navbar-item,
+.uk-navbar-toggle {
+    height: 72px !important;
+    min-height: 72px !important;
+}
+
+.sidenav>span {
+    font-size: 16pt;
+    padding: 6px;
+}
+
+.sidenav>span:hover {
+    padding: 6px;
+    background-color: #2C536420;
+    border-radius: 6px;
+}
+
+.profile-nav {
+    height: 34px;
+    width: 34px;
+    object-fit: cover;
+    border-radius: 50%;
+}
+
+.company-logo {
+    width: 90px;
+}
+
+.profile-drop {
+    margin-top: 0px !important;
+    box-shadow: none;
+    border: 1px solid #2C536420;
+    border-bottom-left-radius: 4px;
+}
+
+.profile-username {
+    font-size: 9pt;
+    color: black;
+    font-weight: 400;
+    margin-left: 10pt;
+    margin-right: 5px;
+    text-transform: none;
+    text-align: left;
+}
+
+.profile-designation {
+    font-size: 8pt;
+    color: grey;
+    display: block;
+}
+
+.profile-drop {
+    padding: 0px;
+}
+
+.profile-drop>ul {
+    padding: 20px;
+}
+
+.profile-drop>ul>li>a {
+    padding: 8px;
+    font-size: 10pt !important;
+}
+
+.profile-btn {
+    background-color: #2381ec;
+    border-radius: 25px;
+    padding-left: 10px;
+    margin-bottom: 10px;
+}
+
+.profile-btn>a,
+.profile-btn>a>span {
+    color: white !important;
+}
+
+.profile-btn>a>span {
+    color: white;
+}
+
+.profile-drop>ul>li>a {
+    color: black;
+}
+
+.profile-drop>ul>li>a>span {
+    font-size: 12pt;
+}
+
+.logout-btn>a {
+    color: red !important;
+}
+
+.logout-btn>a>span {
+    font-size: 9pt;
+    padding: 6px;
+    background-color: #ee636350;
+    border-radius: 25px;
+    margin-right: 10px;
+}
+
+@media only screen and (max-width: 1350px) {
+    .topmenu-icon>li:nth-child(1n+0) {
+        display: none;
+    }
+    .topmenu-icon>li:last-child {
+        display: flex !important;
+    }
+}

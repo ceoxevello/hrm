@@ -10,6 +10,12 @@ import { ForgetotpComponent } from './components/forgetotp/forgetotp.component';
 import { ForgetchangepassComponent } from './components/forgetchangepass/forgetchangepass.component';
 import { SvgsComponent } from './components/svgs/svgs.component';
 import { LoginsideComponent } from './components/loginside/loginside.component';
+import { DashboardComponent } from './components/dashboard/dashboard.component';
+import { SidenavComponent } from './components/sidenav/sidenav.component';
+import { TopnavComponent } from './components/topnav/topnav.component';
+import { TopsearchComponent } from './components/topsearch/topsearch.component';
+import { JobsComponent } from './components/jobs/jobs.component';
+import { CreateJobsComponent } from './components/create-jobs/create-jobs.component';
 
 @NgModule({
   declarations: [
@@ -20,7 +26,13 @@ import { LoginsideComponent } from './components/loginside/loginside.component';
     ForgetotpComponent,
     ForgetchangepassComponent,
     SvgsComponent,
-    LoginsideComponent
+    LoginsideComponent,
+    DashboardComponent,
+    SidenavComponent,
+    TopnavComponent,
+    TopsearchComponent,
+    JobsComponent,
+    CreateJobsComponent
   ],
   imports: [
     BrowserModule,

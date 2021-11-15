@@ -1,0 +1,61 @@
+.sidenavbar {
+    background-color: #f8f8f8 !important;
+    height: 100vh;
+    border-right: 1px solid #f1f1f1;
+    overflow: auto;
+}
+
+.side-logo {
+    color: #2C5364;
+    font-family: 'Righteous', cursive !important;
+    font-size: 22pt;
+    text-align: left;
+    margin: 20px;
+    margin-bottom: 10px !important;
+}
+
+.side-menu {
+    padding: 10px;
+}
+
+.side-menu>ul>li>a {
+    padding: 10px;
+    font-size: 10pt;
+    font-weight: 500;
+    margin-bottom: 6px;
+    border-radius: 6px;
+    color: #2C5364;
+}
+
+.side-menu>ul>li.uk-active,
+.side-menu>ul>li.uk-open,
+.side-menu>ul>li:hover {
+    background-color: #24316E10;
+    color: white;
+    border-radius: 6px;
+    margin-bottom: 4px;
+}
+
+.side-menu>ul>li.uk-open>a {
+    margin-bottom: 0px;
+}
+
+.side-menu>ul>li>a>span {
+    font-size: 14pt;
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
+.menu-sideicon {
+    float: right !important;
+}
+
+.uk-nav-parent-icon>.uk-parent>a::after {
+    display: none;
+}
+
+.sidenav>a {
+    color: #2C5364;
+    padding: 6px;
+    font-size: 9.5pt;
+}
