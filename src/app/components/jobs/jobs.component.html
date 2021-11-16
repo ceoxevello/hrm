@@ -6,7 +6,80 @@
     <div class="uk-width-expand@m">
         <div class="uk-card uk-padding-remove main-container uk-card-body">
             <app-topnav></app-topnav>
+            <div class="details-container">
+                <div class="search-grid ">
+                    <div class="uk-text-center uk-grid-match uk-grid-small" uk-grid>
+                        <div class="uk-width-1-6@m">
+                            <div class="uk-card uk-padding-remove uk-card-body">
+                                <p class="container-heading">Jobs </p>
+                                <ul class="uk-breadcrumb table-breadcrumb uk-text-left">
+                                    <li><a href="#">Recruitment</a></li>
+                                    <li><a href="#">Jobs</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                        <!-- <div class="uk-width-1-3@m">
+                            <div class="uk-card uk-padding-remove uk-text-left uk-card-body">
+                                
+                            </div>
+                        </div> -->
+                        <div class="uk-width-expand@m">
+                            <div class="uk-card uk-padding-remove ukf-flex-right uk-text-right uk-card-body">
+                                <a routerLink="/create-jobs" class="uk-button table-addbtn">Add Jobs</a>
+                            </div>
+                        </div>
+                        <div class="uk-width-auto@m">
+                            <div class="uk-card uk-padding-remove uk-text-right uk-card-body">
 
+                                <ul class="uk-pagination table-pagination uk-flex-right" uk-margin>
+                                    <li><a href="#"><span uk-pagination-previous></span></a></li>
+                                    <li><a href="#"><span uk-pagination-next></span></a></li>
+                                </ul>
+
+                            </div>
+                        </div>
+                        <div class="uk-width-auto@m">
+                            <div class="uk-card uk-padding-remove uk-flex-right uk-text-right uk-card-body">
+                                <a href="" class="uk-button filter-btn"><span class="material-icons-two-tone">
+                                    filter_alt
+                                    </span></a>
+                                <div uk-drop="mode: click">
+                                    <div class="uk-card uk-card-body uk-padding-small uk-card-default filter-grid">
+                                        <form class="uk-search uk-search-default" style="width: 100%;">
+                                            <span uk-search-icon></span>
+                                            <input class="uk-search-input uk-width-auto table-search" type="search" placeholder="Search">
+                                        </form>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+
+                <div class="table-container">
+                    <table class="uk-table uk-table-divider uk-table-small">
+                        <thead>
+                            <tr>
+                                <th> <label class="table-checkbox"><input class="uk-checkbox" type="checkbox" > 14</label>
+
+                                </th>
+                                <th class>Name</th>
+                                <th>Table Heading</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td class="td_checkbox"><label class="table-checkbox"><input class="uk-checkbox" type="checkbox"> </label></td>
+                                <td>
+                                    Abdul kumshey
+                                </td>
+                                <td>Table Data</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
         </div>
     </div>
 </div>

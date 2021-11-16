@@ -8,15 +8,17 @@ import { ForgetpasswordComponent } from './components/forgetpassword/forgetpassw
 import { ForgetchangepassComponent } from './components/forgetchangepass/forgetchangepass.component';
 import { DashboardComponent } from './components/dashboard/dashboard.component';
 import { JobsComponent } from './components/jobs/jobs.component';
+import { CreateJobsComponent } from './components/create-jobs/create-jobs.component';
 
 const routes: Routes = [
-  {path: '', component: DashboardComponent, data: { title : "Welcome to Xevello"}},
+  {path: '', component: JobsComponent, data: { title : "Welcome to Xevello"}},
   {path: 'login', component: LoginComponent, data: { title: "Xevello HRM | Login " }},
   {path: 'login-otp', component: LoginphoneComponent, data: {title : "Xevello HRM | Login with Phone"}},
   {path: 'forget-password', component: ForgetpasswordComponent, data: {title : "Xevello | Forget Password"}},
   {path: 'change-password', component: ForgetchangepassComponent, data: {title: "xevello | Change Password"}},
   {path: 'home', component: DashboardComponent, data: {title : "Xevello | Dashboard"}},
-  {path: 'jobs', component: JobsComponent, data: {title: "Xevello | Jobs"}}
+  {path: 'jobs', component: JobsComponent, data: {title: "Xevello | Jobs"}},
+  {path: 'create-jobs', component: CreateJobsComponent, data: {title: "Xevello | Create New Jobs"}}
 ];
 
 @NgModule({
