@@ -11,7 +11,7 @@ import { JobsComponent } from './components/jobs/jobs.component';
 import { CreateJobsComponent } from './components/create-jobs/create-jobs.component';
 
 const routes: Routes = [
-  {path: '', component: JobsComponent, data: { title : "Welcome to Xevello"}},
+  {path: '', component: CreateJobsComponent, data: { title : "Welcome to Xevello"}},
   {path: 'login', component: LoginComponent, data: { title: "Xevello HRM | Login " }},
   {path: 'login-otp', component: LoginphoneComponent, data: {title : "Xevello HRM | Login with Phone"}},
   {path: 'forget-password', component: ForgetpasswordComponent, data: {title : "Xevello | Forget Password"}},
