@@ -7,8 +7,41 @@
         <div class="uk-card uk-padding-remove main-container uk-card-body">
             <app-topnav></app-topnav>
             <div class="details-container uk-text-left">
-                <h2 class="uk-heading-bullet">Create a jobs</h2>
+                <p class="container-heading">Create Jobs </p>
+                <ul class="uk-breadcrumb table-breadcrumb uk-text-left">
+                    <li><a href="#">Recruitment</a></li>
+                    <li><a routerLink="/jobs">Jobs</a></li>
+                    <li><a routerLink="/create-jobs">Add New</a></li>
+                </ul>
+                <ul class="uk-margin-small-top primary-switcher" uk-tab>
+                    <li><a href="#">Details</a></li>
+                    <li class="uk-active"><a href="#">Application From</a></li>
+                    <li>
+                        <a href="#">Hiring Pipeline</a>
+                    </li>
+                    <li>
+                        <a href="#">Team</a>
+                    </li>
+                    <li>
+                        <a href="#">Promote</a>
+                    </li>
+                </ul>
+
+                <ul class="uk-switcher uk-margin">
+                    <li>
+                        <app-job-details></app-job-details>
+                    </li>
+                    <li>
+                        <app-job-application-form></app-job-application-form>
+                    </li>
+                    <li>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur, sed do eiusmod.</li>
+                </ul>
+
+                <div class="uk-width-1-1@s uk-text-right uk-margin-medium-top">
+                    <button class="uk-button primary-btn-brd">Next</button>
+                </div>
             </div>
+
         </div>
     </div>
 </div>

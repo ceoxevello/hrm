@@ -6,7 +6,11 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./create-jobs.component.scss']
 })
 export class CreateJobsComponent implements OnInit {
-
+  cities = [
+    { value: 1, label: 'Vilnius' },
+    { value: 2, label: 'Kaunas' },
+    { value: 3, label: 'Pavilnys' }
+];
   constructor() { }
 
   ngOnInit(): void {

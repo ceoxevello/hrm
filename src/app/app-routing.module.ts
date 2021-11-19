@@ -9,6 +9,8 @@ import { ForgetchangepassComponent } from './components/forgetchangepass/forgetc
 import { DashboardComponent } from './components/dashboard/dashboard.component';
 import { JobsComponent } from './components/jobs/jobs.component';
 import { CreateJobsComponent } from './components/create-jobs/create-jobs.component';
+import { NgxEditorModule } from 'ngx-editor';
+
 
 const routes: Routes = [
   {path: '', component: CreateJobsComponent, data: { title : "Welcome to Xevello"}},
@@ -22,8 +24,9 @@ const routes: Routes = [
 ];
 
 @NgModule({
-  imports: [RouterModule.forRoot(routes)],
+  imports: [RouterModule.forRoot(routes), NgxEditorModule],
   exports: [RouterModule]
+
 })
 export class AppRoutingModule { }
 

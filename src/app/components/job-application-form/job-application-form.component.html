@@ -1,0 +1,152 @@
+<div class="uk-text-center uk-grid-small " uk-grid>
+    <div class="uk-width-expand@m">
+        <div class="uk-card uk-padding-small application-grid uk-card-body">
+            <p class="application-title">Customize your application form</p>
+            <form class="uk-grid-small uk-margin-small-top uk-text-left" uk-grid>
+                <div class="uk-width-1-2@s" uk-toggle="target: #fullname-modal">
+                    <label class="uk-form-label app-label" for=" form-stacked-text ">Full Name</label>
+                    <a href="#" uk-tooltip="title: Edit; pos: bottom" class="uk-float-right app-input-edit"><span class="material-icons-outlined">
+                        mode
+                        </span></a>
+                    <input class="uk-input app-input uk-disabled" type="text " placeholder="Enter your full name with last name ">
+                </div>
+                <div class="uk-width-1-2@s" uk-toggle="target: #email-modal">
+                    <label class="uk-form-label app-label" for=" form-stacked-text ">Email</label>
+                    <a href="#" uk-tooltip="title: Edit; pos: bottom" class="uk-float-right app-input-edit"><span class="material-icons-outlined">
+                      mode
+                      </span></a>
+                    <input class="uk-input app-input uk-disabled" type="text " placeholder="Enter your mail ">
+                </div>
+                <div class="uk-width-1-2@s" uk-toggle="target: #resume-modal">
+                    <label class="uk-form-label app-label" for=" form-stacked-text ">Email</label>
+                    <a href="#" uk-tooltip="title: Edit; pos: bottom" class="uk-float-right app-input-edit"><span class="material-icons-outlined">
+                    mode
+                    </span></a>
+                    <button class="uk-button uk-input app-btn uk-disabled">Uplaod Resume</button>
+                </div>
+
+                <div class="uk-width-1-4@s ">
+                    <label class="uk-form-label primary-input-label" for=" form-stacked-text ">Experience</label>
+                    <input class="uk-input primary-input " type="text " placeholder="Entrylevel">
+                </div>
+                <div class="uk-width-1-4@s ">
+                    <label class="uk-form-label primary-input-label" for=" form-stacked-text ">Location</label>
+                    <input class="uk-input primary-input " type="text " placeholder="Bhatkal ">
+
+                </div>
+                <div class="uk-width-1-2@s ">
+                    <label class="uk-form-label primary-input-label" for=" form-stacked-text ">Remote</label>
+                    <div class="uk-margin uk-grid-small uk-child-width-auto primary-radio uk-grid">
+                        <label><input class="uk-radio" type="radio" name="radio2" checked> Optional</label>
+                        <label><input class="uk-radio" type="radio" name="radio2"> Important</label>
+                        <label><input class="uk-radio" type="radio" name="radio2"> No</label>
+                    </div>
+
+                </div>
+                <div class="uk-width-1-2@s ">
+                    <label class="uk-form-label primary-input-label" for=" form-stacked-text ">Jobs Description</label>
+                    <textarea class="uk-textarea primary-textarea" rows="5" placeholder="Jobs Description"></textarea>
+                </div>
+                <div class="uk-width-1-2@s ">
+                    <label class="uk-form-label primary-input-label" for=" form-stacked-text ">Job Requirements</label>
+                    <textarea class="uk-textarea primary-textarea" rows="5" placeholder="Jobs Requirements"></textarea>
+                </div>
+                <div class="uk-width-1-4@s ">
+                    <label class="uk-form-label primary-input-label" for=" form-stacked-text ">Country</label>
+                    <input class="uk-input primary-input " type="text " placeholder="India ">
+                </div>
+                <div class="uk-width-1-4@s ">
+                    <label class="uk-form-label primary-input-label" for=" form-stacked-text ">State / County</label>
+                    <input class="uk-input primary-input " type="text " placeholder="Karnataka ">
+                </div>
+                <div class="uk-width-1-4@s ">
+                    <label class="uk-form-label primary-input-label" for=" form-stacked-text ">City</label>
+                    <input class="uk-input primary-input " type="text " placeholder="Bhatkal ">
+                </div>
+                <div class="uk-width-1-4@s ">
+                    <label class="uk-form-label primary-input-label" for=" form-stacked-text ">Pincode</label>
+                    <input class="uk-input primary-input " type="text " placeholder="581320">
+                </div>
+            </form>
+        </div>
+    </div>
+    <div class="uk-width-1-3@m">
+        <div class="uk-card app-fields-grid uk-padding-small uk-card-body">
+            <app-job-suggested-fields></app-job-suggested-fields>
+        </div>
+    </div>
+</div>
+
+<div id="fullname-modal" uk-modal>
+    <div class="uk-modal-dialog uk-width-1-2 app-modal-grid">
+        <button class="uk-modal-close-default app-close-btn" type="button" uk-close></button>
+        <div class="uk-modal-header uk-padding-small">
+            <h2 class="app-modal-title">Edit : Full Name</h2>
+        </div>
+        <div class="uk-modal-body uk-padding-small">
+            <form class="uk-grid-small uk-margin-small-top uk-text-left uk-margin-remove-top" uk-grid>
+                <div class="uk-width-1-2@s">
+                    <label class="uk-form-label app-label" for=" form-stacked-text ">Label <span class="imp-red">*</span></label>
+                    <input class="uk-input app-input " type="text " value="FullName">
+                </div>
+                <div class="uk-width-1-2@s">
+                    <label class="uk-form-label app-label" for=" form-stacked-text ">Placeholder <span class="imp-red">*</span></label>
+                    <input class="uk-input app-input " type="text " value="Enter your full name with last name ">
+                </div>
+            </form>
+        </div>
+        <div class="uk-modal-footer uk-text-right">
+            <button class="uk-button uk-button-small app-cancel-btn uk-modal-close" type="button">Cancel</button>
+            <button class="uk-button app-modal-btn" type="button">Save</button>
+        </div>
+    </div>
+</div>
+
+<div id="email-modal" uk-modal>
+    <div class="uk-modal-dialog uk-width-1-2 app-modal-grid">
+        <button class="uk-modal-close-default app-close-btn" type="button" uk-close></button>
+        <div class="uk-modal-header uk-padding-small">
+            <h2 class="app-modal-title">Edit : Email</h2>
+        </div>
+        <div class="uk-modal-body uk-padding-small">
+            <form class="uk-grid-small uk-margin-small-top uk-text-left uk-margin-remove-top" uk-grid>
+                <div class="uk-width-1-2@s">
+                    <label class="uk-form-label app-label" for=" form-stacked-text ">Label <span class="imp-red">*</span></label>
+                    <input class="uk-input app-input " type="text " value="Email">
+                </div>
+                <div class="uk-width-1-2@s">
+                    <label class="uk-form-label app-label" for=" form-stacked-text ">Placeholder <span class="imp-red">*</span></label>
+                    <input class="uk-input app-input " type="text " value="Enter your mail ">
+                </div>
+            </form>
+        </div>
+        <div class="uk-modal-footer uk-text-right">
+            <button class="uk-button uk-button-small app-cancel-btn uk-modal-close" type="button">Cancel</button>
+            <button class="uk-button app-modal-btn" type="button">Save</button>
+        </div>
+    </div>
+</div>
+<div id="resume-modal" uk-modal>
+    <div class="uk-modal-dialog uk-width-1-2 app-modal-grid">
+        <button class="uk-modal-close-default app-close-btn" type="button" uk-close></button>
+        <div class="uk-modal-header uk-padding-small">
+            <h2 class="app-modal-title">Edit : Resume Upload</h2>
+        </div>
+        <div class="uk-modal-body uk-padding-small">
+            <form class="uk-grid-small uk-margin-small-top uk-text-left uk-margin-remove-top" uk-grid>
+                <div class="uk-width-1-2@s">
+                    <label class="uk-form-label app-label" for=" form-stacked-text ">Label <span class="imp-red">*</span></label>
+                    <input class="uk-input app-input " type="text " value="Upload your CV">
+                </div>
+                <div class="uk-width-1-2@s">
+                    <label class="uk-form-label app-label" for=" form-stacked-text ">Button Name<span class="imp-red">*</span></label>
+                    <input class="uk-input app-input " type="text " value="Upload Resume">
+                </div>
+            </form>
+        </div>
+        <div class="uk-modal-footer uk-text-right">
+            <button class="uk-button uk-button-small app-cancel-btn uk-modal-close" type="button">Cancel</button>
+            <button class="uk-button app-modal-btn" type="button">Save</button>
+        </div>
+    </div>
+</div>

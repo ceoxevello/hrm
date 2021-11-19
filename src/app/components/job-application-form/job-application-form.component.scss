@@ -1,0 +1,122 @@
+.uk-navbar-nav>li>a,
+.uk-navbar-item,
+.uk-navbar-toggle {
+    height: 52px !important;
+    min-height: 52px !important;
+}
+
+nav {
+    background-color: #2C536410 !important;
+}
+
+.uk-navbar-nav>li>a {
+    background-color: white;
+    border: 1px solid #2C536410;
+}
+
+.application-grid {
+    background-color: white;
+    border-radius: 4px;
+}
+
+.application-title {
+    font-size: 12pt;
+    color: black;
+    font-weight: 500;
+    text-align: left;
+}
+
+.app-input {
+    height: 42px;
+    background-color: #2C536420 !important;
+    border: 1px solid #2C536420;
+    border-radius: 4px;
+    color: black !important;
+    font-size: 10pt;
+}
+
+.app-input:focus {
+    border: 1px solid #2C5364;
+}
+
+.app-input::placeholder {
+    font-size: 9pt;
+    color: grey;
+}
+
+.app-label {
+    font-size: 9pt;
+    color: #2C5364;
+    text-align: left;
+    display: inline-block;
+    margin-bottom: 10px;
+    font-weight: 500;
+}
+
+.app-label>.imp-red {
+    color: red;
+}
+
+.app-input-edit>span {
+    font-size: 11pt;
+    background-color: #203A4330;
+    padding: 5px;
+    border-radius: 4px;
+    color: #203A43;
+}
+
+.app-modal-grid {
+    border-radius: 4px;
+}
+
+.app-modal-grid>.uk-modal-header {
+    border-top-left-radius: 8px;
+    border-top-right-radius: 8px;
+}
+
+.app-modal-grid>.uk-modal-footer {
+    border-bottom-left-radius: 8px;
+    border-bottom-right-radius: 8px;
+}
+
+.app-modal-title {
+    font-size: 11pt;
+    color: #2C5364;
+    text-align: left;
+    font-weight: 500;
+}
+
+.app-modal-btn {
+    background-color: #203A43;
+    color: white;
+    text-transform: capitalize;
+    margin-left: 1px;
+    border-radius: 4px;
+    font-size: 10pt;
+}
+
+.app-cancel-btn {
+    background-color: white;
+    border: none;
+    color: #203A43;
+    text-transform: none;
+    font-size: 10pt;
+}
+
+.app-close-btn {
+    color: black;
+    width: 22px;
+}
+
+.app-btn {
+    background-color: #203A4340;
+    color: black;
+    text-transform: capitalize;
+    border-radius: 6px;
+    font-size: 10pt;
+    border: 1px solid #203A4360;
+}
+
+.app-fields-grid {
+    background: white;
+}
